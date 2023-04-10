@@ -54,7 +54,16 @@ class C(A):
 ```
 disable_all_checks()  # Does not affect all the previously created classes, so put it before the class
 ```
-## ... and how to re-enable them
+## ...and how to re-enable them
 ```
 enable_all_checks()  # Does not affect all the previously created classes, so put it before the class
+```
+## What other class decorators exist
+```
+unlimited_type  # Allows to add the attributes that are not declared at the class level
+fast_type  # No checks at all, just a constructor implemetation accepting the attributes
+```
+## ...and how to customize the decorator
+```
+easy_type_decorator(chk_required=True, chk_allowed=True, chk_types=True)  # Allows to allow only the desired checks
 ```
