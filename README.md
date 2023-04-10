@@ -52,9 +52,9 @@ class C(A):
 ```
 ## How to disable all the checks at runtime
 ```
-disable_all_checks()  #Does not affect all the previously created classes, so put it before the class
+disable_all_checks()  # Does not affect all the previously created classes, so put it before the class
 ```
 ## ... and how to re-enable them
 ```
-enable_all_checks()  #Does not affect all the previously created classes, so put it before the class
+enable_all_checks()  # Does not affect all the previously created classes, so put it before the class
 ```
