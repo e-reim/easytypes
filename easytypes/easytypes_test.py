@@ -15,13 +15,15 @@ class MyTestCase(unittest.TestCase):
             b: str = Required()
             c: str = Required("default_str")
             d: str = "default_str"
+
         mt1 = MyType(a=1, b='string')
         self.assertEqual(str(mt1), "<_easy_type.MyType a=1, b='string', c='default_str', d='default_str'>")
         mt1.a = 2
         mt1.b = "some_string"
         mt1.c = "one_more_string"
         mt1.d = "and_the_final_one"
-        self.assertEqual(repr(mt1), "<_easy_type.MyType a=2, b='some_string', c='one_more_string', d='and_the_final_one'>")
+        self.assertEqual(repr(mt1),
+                         "<_easy_type.MyType a=2, b='some_string', c='one_more_string', d='and_the_final_one'>")
         del mt1.a
         self.assertEqual(repr(mt1), "<_easy_type.MyType b='some_string', c='one_more_string', d='and_the_final_one'>")
         self.assertRaises(AttributeRequired, MyType, a=1)
@@ -97,9 +99,6 @@ class MyTestCase(unittest.TestCase):
 
         b = B(a='1', b='2')
         self.assertFalse('c' in b.__dict__)
-
-
-
 
     def test_inheritance(self):
         @safe_type

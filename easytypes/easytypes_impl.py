@@ -1,8 +1,7 @@
-from typing import Any, Type, Dict
 import inspect
+from typing import Any, Type, Dict
 
 import typeguard
-
 
 _DISABLE_ALL_CHECKS = False
 
