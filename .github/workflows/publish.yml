@@ -1,0 +1,22 @@
+name: Publish easytypes to PyPI
+on:
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+    - name: Install dependencies
+      run: curl -sSL https://install.python-poetry.org | python -
+    - name: Create packages
+      run: python -m build
+    - name: Run tests
+      run: python easytypes/easytypes_test.py
+    - name: Upload packages
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_TOKEN }}
