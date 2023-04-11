@@ -65,5 +65,5 @@ fast_type  # No checks at all, just a constructor implemetation accepting the at
 ```
 ## ...and how to customize the decorator
 ```
-easy_type_decorator(chk_required=True, chk_allowed=True, chk_types=True)  # Allows to allow only the desired checks
+easy_type_decorator(chk_required=True, chk_allowed=True, chk_types=True)  # Allows to activate only the desired checks
 ```
