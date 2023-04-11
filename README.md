@@ -52,18 +52,18 @@ class C(A):
 ```
 ## How to disable all the checks at runtime
 ```
-disable_all_checks()  # Does not affect all the previously created classes, so put it before the class
+disable_all_checks()  # Does not affect all the previously created classes, so put it before the class declaration
 ```
 ## ...and how to re-enable them
 ```
-enable_all_checks()  # Does not affect all the previously created classes, so put it before the class
+enable_all_checks()  # Does not affect all the previously created classes, so put it before the class declaration
 ```
-## What other class decorators exist
+## The other class decorators
 ```
 unlimited_type  # Allows to add the attributes that are not declared at the class level
 fast_type  # No checks at all, just a constructor implemetation accepting the attributes
 ```
-## ...and how to customize the decorator
+## ...and how to get a customized decorator
 ```
 easy_type_decorator(chk_required=True, chk_allowed=True, chk_types=True)  # Allows to activate only the desired checks
 ```
