@@ -10,6 +10,7 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: 3.11
+        cache: 'pip'
     - name: Install dependencies
       run: curl -sSL https://install.python-poetry.org | python -
     - name: Create packages
