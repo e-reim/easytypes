@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "easytypes"
-version = "0.5.1"
+version = "0.5.2"
 description = "Easy declaration of data structures with runtime type checking"
 authors = ["Reim, Elijah <Elijah.Reim@wartsila.com>"]
 license = "Apache-2.0"
@@ -21,7 +21,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 typeguard = "^3.0.2"
-coverage = "^7.2.3"
+#coverage = "^7.2.3"
 
 [build-system]
 requires = ["poetry-core"]
