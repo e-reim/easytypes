@@ -106,10 +106,8 @@ def easy_type_decorator(chk_required=True, chk_allowed=True, chk_types=True):
             keys.sort()  # We need the results to be repeatable
             return f"<{self.__class__.__name__} {', '.join(f'{k}={self.__dict__[k]!r}' for k in keys)}>"
 
-        methods = {"__init__": _init, "__str__": _str, "__repr__": _str}
-        if chk_r or chk_a or chk_t:
-            methods['__setattr__'] = _setattr
-            methods['__delattr__'] = _delattr
+        methods = {"__init__": _init, "__str__": _str, "__repr__": _str,
+                   "__setattr__": _setattr, "__delattr__": _delattr}
         return type(f"_easy_type.{cls.__name__}", (cls,), methods)
 
     return wrapper

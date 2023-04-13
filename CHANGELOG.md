@@ -1,5 +1,8 @@
 # easytypes change log
 
-## 0.1.0
-
+## 0.5.1
 Initial beta version
+##0.5.2
+Seems to be fully functional
+##0.5.3
+A small fix that affects a potential bug that happens if a base type has checks on, and a derived type does not. `__setattr__` and `__delattr` are now always present, not just if needed.

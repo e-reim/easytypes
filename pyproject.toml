@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "easytypes"
-version = "0.5.2"
+version = "0.5.3"
 description = "Easy declaration of data structures with runtime type checking"
 authors = ["Reim, Elijah <Elijah.Reim@wartsila.com>"]
 license = "Apache-2.0"
