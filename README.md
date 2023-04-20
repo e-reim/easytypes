@@ -23,7 +23,7 @@ class A:
     a: int  # Type checking, not required, no default value
     b: str = '5'  # Type checking, not required, the default value is '5'
     c: float = Required()  # Type checking, required, no default value
-    d: Tuple[int, int] = Required(2, 3)  # Type checking, required, the default value is (2, 3)
+    d: Tuple[int, int] = Required((2, 3))  # Type checking, required, the default value is (2, 3)
 ```
 ## ...and how does the class work
 ```
