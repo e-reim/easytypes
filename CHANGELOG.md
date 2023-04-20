@@ -13,4 +13,4 @@ A small fix that affects a potential bug that happens if a base type has checks 
 Fixed a typo in README.md
 
 ## 0.5.5
-____debug____ off now disables all the checks by default. Though you still switch them on
+\_\_debug\_\_ off now disables all the checks by default. Though you still switch them on
