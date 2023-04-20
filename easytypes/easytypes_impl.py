@@ -3,7 +3,7 @@ from typing import Any, Type, Dict
 
 import typeguard
 
-_DISABLE_ALL_CHECKS = False
+_DISABLE_ALL_CHECKS = not __debug__
 
 
 def disable_all_checks() -> None:
